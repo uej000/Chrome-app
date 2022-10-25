@@ -6,6 +6,7 @@ function paintImage(imgNumber) {
   const image = new Image();
   image.src = `images/${imgNumber + 1}.jpg`;
   body.style.backgroundImage = "url('" + image.src + "')";
+  body.style.backgroundSize = 'cover';
 }
 
 function genRandom() {
